@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge | Codificador</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/toast.css">
+    <link rel="shortcut icon" href="assets/images/logo-alura.png" type="image/x-icon">
+</head>
+<body class="dark">
+    <header class="header">
+        <div class="header-content">
+            <img class="logo" src="assets/logo-alura.png" alt="Logo da Alura">
+        </div>
+    </header>
+    <main class="container">
+        <form class="form">
+            <textarea class="textarea" placeholder="Digite seu texto..."></textarea>
+            <label class="label">Apenas letras minúsculas e sem acento</label>
+            <div class="form__buttons">
+                <button id="btn-encrypt" class="btn btn-primary" type="button">Criptografar</button>
+                <button id="btn-decrypt" class="btn" type="button">Descriptografar</button>
+            </div>
+        </form>
+        <div class="result-container">
+            <div class="no-result">
+                <img class="no-result__image" src="assets/no-result.svg" alt="Imagem de nenhum resultado">
+                <h2 class="no-result__title">Nenhuma mensagem encontrada</h2>
+                <p class="no-result__text">Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            <div class="result">
+                <p class="result__text"></p>
+                <button id="btn-copy" class="btn">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/main.js" type="module"></script>
+</body>
+</html>
